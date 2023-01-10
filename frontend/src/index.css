@@ -1,0 +1,142 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #FFFAFF;
+  color: #151531;
+}
+
+header{
+  top: 0;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  background-color: #FFFAFF;
+  padding: 2.1rem 9rem;
+  box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+}
+.navbar h2{
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.navbar span{
+  color: rgb(246, 165, 16);
+}
+.navbar div{
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 1rem;
+  cursor: pointer;
+}
+.navbar div:hover{
+  color: red;
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+form,.count{
+  padding: 4rem;
+}
+.count{
+  display: flex;
+  align-items: center;
+}
+label{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+.logo{
+  margin-right: 4rem;
+}
+input{
+  padding: 1rem;
+  width: 70%;
+  border-radius: 3rem;
+}
+#buttons{
+  padding: 1.5rem;
+  background: #9D0AFF;
+  border-radius: 1.8rem;
+  border: none;
+  color: #FFFAFF;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  cursor: pointer;
+  margin-left: 2rem;
+}
+.count h2, .count div{
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: 2rem;
+}
+.loginForm{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loginForm label{
+  text-align: left;
+  display: block;
+}
+.loginForm input{
+  width: 60%;
+  padding: 0.6rem 1rem;
+  margin: 1rem 0rem;
+  border: 0.1rem solid #ddd;
+  display: block;
+}
+#logIn{
+  font-size: 3.5rem;
+  font-weight: 900;
+}
+.loginForm form{
+  margin: 2rem auto;
+  width: 100%;
+  margin-left: 15rem;
+}
+.login button{
+  display: block;
+  margin-left: 20rem;
+  padding: 1.5rem;
+  background: #9D0AFF;
+  border-radius: 1.8rem;
+  border: none;
+  color: #FFFAFF;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width:391px){
+      
+      html {
+        font-size: 31%;
+      }
+}
