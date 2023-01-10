@@ -8,6 +8,7 @@ const app = express()
 const PORT = process.env.PORT
 let path = require('path')
 app.use(express.static(path.join(__dirname, '../frontend/build')))
+console.log("********************************",path.join(__dirname, '../frontend/build'))
 
 app.use(cors())
 app.use(express.json())
