@@ -10,7 +10,7 @@ const Login = () => {
     const handleSubmit=async(e)=>{
         e.preventDefault()
         try{
-            let {data} = await axios.post('http://localhost:5000/api/admin/login',
+            let {data} = await axios.post('https://pepper-adminpanel.onrender.com/api/admin/login',
             { 'email':email,'password':password })
             let token = data.token
             localStorage.setItem('user',token)

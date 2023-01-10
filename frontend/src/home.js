@@ -11,7 +11,7 @@ const Home = () => {
     const handleSubmitOne=async(e)=>{
         let token = localStorage.getItem('user')
         try{
-            let {data} = await axios.patch('http://localhost:5000/api/components/update',
+            let {data} = await axios.patch('https://pepper-adminpanel.onrender.com/api/components/update',
             { 'text':header },
             {
                 headers:{
@@ -29,7 +29,7 @@ const Home = () => {
     const handleSubmitTwo=async(e)=>{
         let token = localStorage.getItem('user')
         try{
-            let {data} = await axios.patch('http://localhost:5000/api/components/update',
+            let {data} = await axios.patch('https://pepper-adminpanel.onrender.com/api/components/update',
             { 'image':url },
             {
                 headers:{
@@ -47,7 +47,7 @@ const Home = () => {
     const handleLogout=async(e)=>{
             let token = localStorage.getItem('user')
             try{
-                await axios.get('http://localhost:5000/api/admin/logout',
+                await axios.get('https://pepper-adminpanel.onrender.com/api/admin/logout',
                 { 
                     headers:{
                         'Content-Type':'application/json',
@@ -64,7 +64,7 @@ const Home = () => {
 
         const main=async()=>{
             try{
-                let {data} = await axios.get('http://localhost:5000/api/components')
+                let {data} = await axios.get('https://pepper-adminpanel.onrender.com/api/components')
                 setCount(data.count)
             }
             catch(err){
